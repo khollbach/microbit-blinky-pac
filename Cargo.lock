@@ -157,6 +157,7 @@ dependencies = [
  "cortex-m-rt",
  "microbit-v2",
  "nb 1.1.0",
+ "nrf52833-pac 0.12.2",
  "panic-halt",
  "panic-rtt-target",
  "rtt-target 0.4.0",
@@ -213,7 +214,7 @@ dependencies = [
  "fixed",
  "nb 1.1.0",
  "nrf-usbd",
- "nrf52833-pac",
+ "nrf52833-pac 0.10.1",
  "rand_core",
  "void",
 ]
@@ -239,7 +240,7 @@ checksum = "87f76d269c9a239ffe24edaa5ee0972b102c04e898b464e3e9a12ab0eacd5f76"
 dependencies = [
  "embedded-hal",
  "nrf-hal-common",
- "nrf52833-pac",
+ "nrf52833-pac 0.10.1",
 ]
 
 [[package]]
@@ -250,6 +251,16 @@ checksum = "cd69bdb25903e18e098c040ef31dc863814437af010dea8bd55aa31f686cb461"
 dependencies = [
  "cortex-m",
  "cortex-m-rt",
+ "vcell",
+]
+
+[[package]]
+name = "nrf52833-pac"
+version = "0.12.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "10e1358255b360cdc816dd7b6ef81be8c8499c0998277e5249bed222bd0f5241"
+dependencies = [
+ "cortex-m",
  "vcell",
 ]
 
